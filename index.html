@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISTORXION // MOVISTAR ARENA — FIESTA FA!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- html2pdf.js for generating high quality printable client proposal PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Distorxion Interactive Loader (Igual que en Konex) -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <span class="loader-label">DISTORXION</span>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <span class="loader-sub">SISTEMA MOVISTAR ARENA ACTIVADO</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="nav" id="nav">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="Distorxion Logo" style="height: 40px;" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#bloques" class="nav-link">BLOQUES</a></li>
+        <li><a href="#cotizador" class="nav-link">VALORES</a></li>
+        <li><a href="#cronograma" class="nav-link">CRONOGRAMA</a></li>
+        <li><a href="#matriz" class="nav-link">ALCANCE</a></li>
+        <li><a href="#contacto" class="nav-link">ESTUDIO</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://instagram.com/distorxion___" target="_blank" class="nav-social-link" title="Instagram @distorxion___">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <button class="btn btn-outline btn-sm" id="btnOpenExport">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          DESCARGAR PDF
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hud-tag">
+        <span class="hud-dot"></span>
+        PROPUESTA TÉCNICA Y CREATIVA // MOVISTAR ARENA
+      </div>
+      <h1 class="hero-title">
+        FIESTA FA! <br/>
+        <span class="glow-red">DISEÑO VISUAL, LÁSER & REALTIME</span>
+      </h1>
+      <p class="section-desc" style="font-size: 17px; max-width: 820px;">
+        Propuesta integral de co-diseño visual, arquitectura de servidores en tiempo real, procesamiento de cámaras en vivo, sincronización de láser escénico y plataforma interactiva experimental para el público en Movistar Arena.
+      </p>
+
+      <div class="hero-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">VENUE / EVENTO</span>
+          <span class="meta-value">Movistar Arena // Fiesta FA!</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">FECHA PROGRAMADA</span>
+          <span class="meta-value accent-cyan">Noviembre 2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">DIRECCIÓN & TECNOLOGÍA</span>
+          <span class="meta-value">Distorxion Studio</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">ESTADO DEL DOCUMENTO</span>
+          <span class="meta-value accent-red">Base de Cotización v1.2</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Bloques de Trabajo -->
+  <section class="section section--fullbleed" id="bloques">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ARQUITECTURA_MODULAR]</span>
+        <h2 class="section-title">BLOQUES <span class="accent-red">TÉCNICOS</span></h2>
+        <p class="section-desc">
+          Estructuración integral del proyecto por áreas de desarrollo, equipamiento especializado, dirección artística y componentes de ingeniería en tiempo real.
+        </p>
+      </div>
+    </div>
+
+      <div class="proposals-container">
+
+        <!-- BLOQUE 1: LÁSER ESCÉNICO -->
+        <article class="proposal-row" id="bloque-1">
+          <div class="proposal-visual">
+            <img src="img/01-laser.png" alt="LÁSER ESCÉNICO" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">01</div>
+            <div class="proposal-tag badge-red">LÁSER & TIME-CODE</div>
+            <h2 class="proposal-title">LÁSER ESCÉNICO SINCRONIZADO</h2>
+            <p class="proposal-subtitle">SINCRONIZACIÓN LÁSER Y VIDEO (2 MINUTOS)</p>
+            <p class="proposal-description">
+              Sincronización láser y video de 2 minutos concebida para la intro del show o como separador de alto impacto durante el show. Diseño, programación milimétrica e integración con la narrativa visual.
+            </p>
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title">DISEÑO & ESTÉTICA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Sincronización láser y video (2 minutos).</li>
+                  <li class="spec-item">Intro de show o separador durante el show.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">TÉCNICA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Láser sincronizado con contenido de video.</li>
+                  <li class="spec-item">Integración con el sistema TouchDesigner y visuales.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">OPERATIVA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Programación milimétrica de cues.</li>
+                  <li class="spec-item">Pruebas de calibración espacial y zonas de seguridad.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">FEE ESTIMADO / REFERENCIA</span>
+                <span class="price-value">$ 2.500</span>
+                <span class="price-currency">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('laserModal')">VER DETALLES →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLOQUE 2: DISEÑO Y OPERACIÓN EN VIVO -->
+        <article class="proposal-row" id="bloque-2">
+          <div class="proposal-visual">
+            <img src="img/02-operacion.jpg" alt="DISEÑO Y OPERACIÓN EN VIVO" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">02</div>
+            <div class="proposal-tag badge-red">SHOW & OPERACIÓN</div>
+            <h2 class="proposal-title">DISEÑO Y OPERACIÓN EN VIVO</h2>
+            <p class="proposal-subtitle">ARMADO TÉCNICO Y OPERACIÓN EN SHOW</p>
+            <p class="proposal-description">
+              Utilización durante el show, operado en vivo y armado técnico integral de los sistemas (láser, video, servidores y red) por personal técnico especializado en FoH.
+            </p>
+            
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title">DISEÑO & ARMADO</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Armado técnico y montaje en venue.</li>
+                  <li class="spec-item">Configuración e integración de sistemas.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">TÉCNICA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Programación de cues y sincronización.</li>
+                  <li class="spec-item">Monitoreo de señal e infraestructura.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">OPERATIVA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Operado en vivo durante la totalidad del show.</li>
+                  <li class="spec-item">Presencia de operadores técnicos en FoH.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">FEE OPERACIÓN Y ARMADO</span>
+                <span class="price-value">$ 1.200</span>
+                <span class="price-currency">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('operacionModal')">VER DETALLES →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLOQUE 3: VIDEO EN VIVO & CÁMARAS -->
+        <article class="proposal-row" id="bloque-3">
+          <div class="proposal-visual">
+            <img src="img/03-cameras.png" alt="VIDEO EN VIVO & CANVAS DE CÁMARAS" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">03</div>
+            <div class="proposal-tag badge-cyan">REALTIME SHADERS</div>
+            <h2 class="proposal-title">VIDEO EN VIVO & CANVAS DE CÁMARAS</h2>
+            <p class="proposal-subtitle">SISTEMA DE CAPTURA Y PROCESAMIENTO</p>
+            <p class="proposal-description">
+              Sistema de captura y procesamiento en tiempo real de las señales de cámara del venue, convirtiéndolas en una pieza viva y reactiva del lenguaje escénico.
+            </p>
+            
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title cyan">DISEÑO & ESTÉTICA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">Generación de mezclas híbridas (cámaras en vivo + visuales generativos).</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title cyan">TÉCNICA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">Recepción de señales de cámara mediante capturadoras profesionales SDI/NDI.</li>
+                  <li class="spec-item">Filtrado, post-procesamiento y efectos reactivos por shaders (TouchDesigner).</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title cyan">OPERATIVA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">Composición y ruteo a los distintos canvas y pantallas del estadio.</li>
+                  <li class="spec-item">Control de switch de capas en tiempo real durante el show.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">FEE ESTIMADO / REFERENCIA</span>
+                <span class="price-value">$ 900</span>
+                <span class="price-currency">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('camerasModal')">VER DETALLES →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLOQUE 4: GENERACIÓN DE CONTENIDO VISUAL -->
+        <article class="proposal-row" id="bloque-4">
+          <div class="proposal-visual">
+            <img src="img/04-visuales.jpg" alt="GENERACIÓN DE CONTENIDO VISUAL" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">04</div>
+            <div class="proposal-tag badge-red">CONTENIDOS // 15 DÍAS</div>
+            <h2 class="proposal-title">GENERACIÓN DE CONTENIDO VISUAL</h2>
+            <p class="proposal-subtitle">SISTEMA MODULAR ADAPTATIVO</p>
+            <p class="proposal-description">
+              Desarrollo de piezas visuales a medida para acompañar la progresión del show de ~30 temas, con criterio de reutilización, adaptación y combinación dinámica.
+            </p>
+            
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title">DISEÑO & ESTÉTICA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">15 días de diseño, animación 2D/3D y producción de piezas clave.</li>
+                  <li class="spec-item">Sistema modular de loops adaptativos según la intensidad del tema.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">TÉCNICA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Masterización en las resoluciones nativas del canvas LED del estadio.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">OPERATIVA</div>
+                <ul class="spec-list">
+                  <li class="spec-item">Co-diseño y reuniones con la dirección creativa del show.</li>
+                  <li class="spec-item">Incluye hasta 2 rondas de correcciones y ajustes antes de ensayos.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">VALOR PRELIMINAR DEFINIDO</span>
+                <span class="price-value" style="color: var(--accent-red);">$ 2.500</span>
+                <span class="price-currency" style="color: var(--accent-red);">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('visualsModal')">VER DETALLES →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLOQUE 5: SERVIDORES, RED & INFRAESTRUCTURA -->
+        <article class="proposal-row" id="bloque-5">
+          <div class="proposal-visual">
+            <img src="img/05-servidores.jpg" alt="SERVIDORES, RED & INFRAESTRUCTURA" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">05</div>
+            <div class="proposal-tag badge-cyan">INFRAESTRUCTURA // HOST</div>
+            <h2 class="proposal-title">SERVIDORES, RED & INFRAESTRUCTURA</h2>
+            <p class="proposal-subtitle">PROCESAMIENTO MASIVO EN GPU</p>
+            <p class="proposal-description">
+              Infraestructura de hardware de grado broadcast con procesamiento masivo en GPU, 2 servidores (1 principal, 1 de backup), placa de entrada y salida PCI x 4 (4 salidas 4K) y red 10GbE.
+            </p>
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title cyan">DISEÑO & ESTÉTICA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">Pruebas & Ensayos: 1 a 2 semanas de testing en estudio y calibración.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title cyan">TÉCNICA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">2 servidores (1 principal, 1 de backup).</li>
+                  <li class="spec-item">Placa de entrada y salida PCI x 4 (4 salidas 4K).</li>
+                  <li class="spec-item">Red de Alta Velocidad: Switches dedicados 10GbE.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title cyan">OPERATIVA</div>
+                <ul class="spec-list cyan">
+                  <li class="spec-item">Pruebas de estrés y redundancia previo al evento.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">HARDWARE + INFRAESTRUCTURA</span>
+                <span class="price-value">$ 800</span>
+                <span class="price-currency">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('infraModal')">VER DETALLES →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLOQUE 6: EXPERIMENTAL / BETA QR INTERACTIVO -->
+        <article class="proposal-row" id="bloque-6">
+          <div class="proposal-visual">
+            <img src="img/06-beta.png" alt="MÓDULO EXPERIMENTAL" loading="lazy" />
+            <div class="proposal-visual-overlay"></div>
+          </div>
+          <div class="proposal-info">
+            <div class="proposal-index-bg">06</div>
+            <div class="proposal-tag badge-amber">MÓDULO EXPERIMENTAL // BETA</div>
+            <h2 class="proposal-title">PLATAFORMA INTERACTIVA PÚBLICO (QR)</h2>
+            <p class="proposal-subtitle">EXPERIENCIA WEB PROPIETARIA</p>
+            <p class="proposal-description">
+              Desarrollo de una experiencia web propietaria accesible mediante código QR proyectado en las pantallas. Módulo enfocado en recopilar fotos con la app desde el ingreso, permitiendo que la gente se encuentre y experimente libremente para nutrir las cenefas del Movistar Arena sin saturar la red.
+            </p>
+            
+            <div class="proposal-specs-grid">
+              <div class="spec-col">
+                <div class="spec-col-title amber">DISEÑO & ESTÉTICA</div>
+                <ul class="spec-list amber">
+                  <li class="spec-item">Recopilación de fotos desde el acceso al estadio.</li>
+                  <li class="spec-item">Integración en cenefas del estadio y pantallas para que la gente se encuentre.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title amber">TÉCNICA</div>
+                <ul class="spec-list amber">
+                  <li class="spec-item">Recepción e ingesta en servidor local de producción en tiempo real.</li>
+                  <li class="spec-item">Sistema liviano para no saturar la red móvil del estadio.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title amber">OPERATIVA</div>
+                <ul class="spec-list amber">
+                  <li class="spec-item">Libre experimentación del público a medida que llega.</li>
+                  <li class="spec-item">Pruebas previas de estrés y validación.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proposal-footer">
+              <div class="proposal-price-box">
+                <span class="price-label">DESARROLLO WEB + SERVER LOCAL</span>
+                <span class="price-value" style="color: var(--accent-amber);">$ 5.200</span>
+                <span class="price-currency" style="color: var(--accent-amber);">USD</span>
+              </div>
+              <div class="proposal-actions">
+                <button class="btn-details" onclick="openModal('qrModal')">VER ARQUITECTURA TÉCNICA BETA</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+  </section>
+
+  <!-- Section 2: Cotizador Interactivo & Presupuesto -->
+  <section class="section" id="cotizador">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[COTIZADOR_DINÁMICO]</span>
+        <h2 class="section-title">DETALLE DE <span class="accent-red">PRESUPUESTOS</span></h2>
+        <p class="section-desc">
+          Selecciona los bloques requeridos para calcular automáticamente los valores de referencia según la escala y complejidad del espectáculo.
+        </p>
+      </div>
+
+      <div class="cotizador-wrapper">
+        <div class="disclaimer-box" style="background: rgba(255, 26, 26, 0.05); border-left: 3px solid var(--accent-red); padding: 14px 18px; border-radius: 4px; margin-bottom: 24px; font-size: 13px; color: #a1a1aa; line-height: 1.5;">
+          <strong style="color: #fff; display: block; margin-bottom: 4px;">⚠️ NOTA SOBRE ESTIMACIÓN DE VALORES:</strong>
+          Los valores presentados en este documento son estimados de referencia preliminares fijados sin contar aún con el cronograma definitivo ni los diseños finales. El valor final variará ajustándose al nivel de complejidad técnica, la escala de producción y las especificaciones finales requeridas para el show.
+        </div>
+
+        <div class="cotizador-controls">
+          <div class="preset-pills">
+            <button class="preset-pill" onclick="applyPreset('base')">PROPUESTA BASE (SHOW ESENCIAL)</button>
+            <button class="preset-pill active" onclick="applyPreset('full')">SHOW COMPLETO (VISUALES + LÁSER + CÁMARAS)</button>
+            <button class="preset-pill" onclick="applyPreset('interactive')">FULL EXPERIENCE (+ BETA QR)</button>
+          </div>
+        </div>
+
+        <table class="cotizador-table">
+          <thead>
+            <tr>
+              <th style="width: 50px;">ACTIVO</th>
+              <th>BLOQUE / CONCEPTO TÉCNICO</th>
+              <th>CATEGORÍA</th>
+              <th class="text-right">VALOR REF. (USD)</th>
+            </tr>
+          </thead>
+          <tbody id="cotizadorTableBody">
+            <!-- Table rows populated via JavaScript -->
+          </tbody>
+        </table>
+
+        <div class="cotizador-summary-panel">
+          <div class="summary-labels">
+            <h3>TOTAL INVERSIÓN ESTIMADA</h3>
+            <p id="selectedBlocksSummary">5 de 6 conceptos seleccionados</p>
+          </div>
+          <div class="summary-numbers">
+            <div class="total-usd" id="totalUsdDisplay">$ 8.400 USD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Cronograma de Trabajo -->
+  <section class="section" id="cronograma">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[TIMELINE_CRÍTICO]</span>
+        <h2 class="section-title">PLANIFICACIÓN & <span class="accent-red">HITOS</span></h2>
+        <p class="section-desc">
+          Cronograma proyectado para garantizar los estándares técnicos y de estabilidad requeridos en un venue de escala Arena.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="step-phase">FASE 1: PRE-PRODUCCIÓN</div>
+          <h4 class="step-title">DISEÑO CONCEPTUAL & REUNIONES</h4>
+          <ul class="step-list">
+            <li>Reunión de alineación con Dirección Creativa.</li>
+            <li>Definición de paleta visual, momentos y guión técnico.</li>
+            <li>Mapeo de señales de cámara y especificaciones del venue.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-step active-step">
+          <div class="step-phase">FASE 2: DESARROLLO (15 DÍAS)</div>
+          <h4 class="step-title">PRODUCCIÓN DE VISUALES & SHADERS</h4>
+          <ul class="step-list">
+            <li>Generación de loops, motion 2D/3D y clips de temas.</li>
+            <li>Programación de pipelines de efectos en TouchDesigner.</li>
+            <li>Programación de cues de láser escénico y time-code.</li>
+            <li>Desarrollo de la app web QR y pruebas de concurrencia.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-step venue-step">
+          <div class="step-phase">FASE 3: ENSAYOS & RED (1-2 SEM)</div>
+          <h4 class="step-title">INTEGRACIÓN & CALIBRACIÓN</h4>
+          <ul class="step-list">
+            <li>Pruebas de estrés de servidores y redundancia.</li>
+            <li>Ensayo general con banda y sincronización SMPTE.</li>
+            <li>Alineación y calibración de proyectores láser.</li>
+            <li>Auditoría de red WiFi en el estadio para el módulo QR.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-step active-step">
+          <div class="step-phase">FASE 4: SHOW EN VIVO</div>
+          <h4 class="step-title">EJECUCIÓN // MOVISTAR ARENA</h4>
+          <ul class="step-list">
+            <li>Montaje temprano de servidores y control en FoH.</li>
+            <li>Prueba de señal multicámara y canvas LED.</li>
+            <li>Operación técnica en vivo durante todo el show.</li>
+            <li>Soporte y contingencia activa.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Matriz de Responsabilidades & Alcance -->
+  <section class="section" id="matriz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[MATRIZ_PROVISIONES]</span>
+        <h2 class="section-title">LÍMITES DE <span class="accent-red">ALCANCE</span></h2>
+        <p class="section-desc">
+          Distribución técnica de responsabilidades entre Distorxion Studio y la Producción / Venue.
+        </p>
+      </div>
+
+      <div class="matrix-container">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>COMPONENTE / REQUERIMIENTO</th>
+              <th>PROVISTO POR DISTORXION</th>
+              <th>PROVISTO POR PRODUCCIÓN / VENUE</th>
+              <th>NOTAS TÉCNICAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Servidor Principal de Procesamiento</strong></td>
+              <td><span class="badge-tag badge-red">SÍ (RTX A6000 + 8K IN)</span></td>
+              <td>Alimentación estabilizada 220V</td>
+              <td>Rack principal con SAI/UPS.</td>
+            </tr>
+            <tr>
+              <td><strong>Servidor de Respaldo / Redundancia</strong></td>
+              <td><span class="badge-tag badge-red">SÍ</span></td>
+              <td>Espacio físico en FoH / Control</td>
+              <td>Segundo sistema sincronizado.</td>
+            </tr>
+            <tr>
+              <td><strong>Señales de Cámaras en Vivo</strong></td>
+              <td>Ruteo y efectos en tiempo real</td>
+              <td><span class="badge-tag badge-cyan">SÍ (Cámaras, Operadores, Salidas SDI)</span></td>
+              <td>Producción entrega señales SDI limpias.</td>
+            </tr>
+            <tr>
+              <td><strong>Pantallas LED / Procesadores de Pantalla</strong></td>
+              <td>Generación de señal master</td>
+              <td><span class="badge-tag badge-cyan">SÍ (Pantallas LED, Novastar/Brompton)</span></td>
+              <td>Ingreso vía HDMI 2.1 / DisplayPort / SDI.</td>
+            </tr>
+            <tr>
+              <td><strong>Proyectores Láser & Rigging</strong></td>
+              <td>Programación, cues y operación</td>
+              <td><span class="badge-tag badge-cyan">SÍ (Equipos Láser físicos y colgado)</span></td>
+              <td>Opcional: Distorxion puede cotizar hardware láser.</td>
+            </tr>
+            <tr>
+              <td><strong>Infraestructura de Red para Módulo QR</strong></td>
+              <td>Servidor web de ingesta y software</td>
+              <td><span class="badge-tag badge-amber">SÍ (Red WiFi dedicada público)</span></td>
+              <td>Indispensable para soportar concurrencia sin saturar 4G.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Estudio & Redes (Distorxion) -->
+  <section class="studio-section" id="contacto">
+    <div class="container">
+      <div class="studio-inner">
+        <div class="studio-left">
+          <div class="section-tag">[DISTORXION_STUDIO]</div>
+          <h2 class="studio-title">ESTUDIO<br/><span class="accent-red">TECNOLÓGICO</span><br/>CREATIVO</h2>
+          <p class="studio-desc">Diseño de experiencias audiovisuales, visuales en tiempo real, ingeniería de software e instalaciones interactivas de alto impacto.</p>
+          <div style="margin-top: 30px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <button onclick="document.getElementById('btnOpenExport').click()" class="btn btn-primary">DESCARGAR PROPUESTA PDF ↓</button>
+            <a href="https://distorxion.com.ar/" target="_blank" class="btn btn-outline">VISITAR DISTORXION.COM.AR ↗</a>
+          </div>
+        </div>
+        <div class="studio-right">
+          <div class="contact-block">
+            <div class="contact-item">
+              <span class="contact-label">WEB</span>
+              <a href="https://distorxion.com.ar/" class="contact-val" target="_blank">distorxion.com.ar</a>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-item">
+              <span class="contact-label">IG</span>
+              <a href="https://instagram.com/distorxion___" class="contact-val" target="_blank">@distorxion___</a>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-item">
+              <span class="contact-label">VENUE</span>
+              <span class="contact-val">Movistar Arena // Fiesta FA!</span>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-item">
+              <span class="contact-label">LOC</span>
+              <span class="contact-val">Buenos Aires, Argentina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span>© 2026 DISTORXION ESTUDIO</span>
+        <span class="footer-sep">//</span>
+        <span>MOVISTAR ARENA — FIESTA FA!</span>
+      </div>
+      <div class="footer-actions">
+        <button onclick="document.getElementById('btnOpenExport').click()" class="footer-btn-pdf">DESCARGAR PRESUPUESTO (PDF) ↓</button>
+        <button onclick="window.print()" class="footer-btn-pdf">PRINT VIEW</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Technical Detail Modals -->
+
+  <!-- Modal Laser -->
+  <div class="modal-backdrop" id="laserModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('laserModal')">&times;</button>
+      <span class="section-tag">[DETALLE_TÉCNICO]</span>
+      <h3 class="modal-title">BLOQUE 01: LÁSER ESCÉNICO</h3>
+      <div class="modal-body">
+        <p><strong>Sincronización Laser y Video (2 Minutos):</strong> Intervención audiovisual concebida como intro de show o separador de alto impacto durante la presentación. Control mediante protocolos estándar (ILDA / Pangolin Beyond / OSC) vinculados a la línea de tiempo y visuales.</p>
+        <br/>
+        <p><strong>Seguridad y Normativa:</strong> Se configuran zonas de corte (Safety Zones) y máscaras para evitar impacto directo en lentes de cámaras del venue o zonas no permitidas del público.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Operación en Vivo -->
+  <div class="modal-backdrop" id="operacionModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('operacionModal')">&times;</button>
+      <span class="section-tag">[DETALLE_TÉCNICO]</span>
+      <h3 class="modal-title">BLOQUE 02: DISEÑO Y OPERACIÓN EN VIVO</h3>
+      <div class="modal-body">
+        <p><strong>Armado Técnico & Programación:</strong> Configuración e integración en venue de los sistemas de adquisición de señal, red y consolas de control. Calibración en tiempo real antes y durante los ensayos generales.</p>
+        <br/>
+        <p><strong>Ejecución durante el Show:</strong> Operado en vivo por personal técnico especializado desde la isla de FoH, garantizando la utilización durante el show, el operado y el armado técnico integral.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Cameras -->
+  <div class="modal-backdrop" id="camerasModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('camerasModal')">&times;</button>
+      <span class="section-tag">[DETALLE_TÉCNICO]</span>
+      <h3 class="modal-title">BLOQUE 03: PROCESAMIENTO DE CÁMARAS</h3>
+      <div class="modal-body">
+        <p><strong>Pipeline TouchDesigner:</strong> Las señales de las cámaras ingresan por capturadoras de baja latencia (Blackmagic DeckLink 8K / UltraStudio) y son procesadas a 60 FPS mediante GLSL shaders personalizados que aplican efectos dinámicos como distortion, pixel sorting, glitch reactivo, feedback loop y corrección de color sincronizada con los temas musicales.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Visuals -->
+  <div class="modal-backdrop" id="visualsModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('visualsModal')">&times;</button>
+      <span class="section-tag">[DETALLE_TÉCNICO]</span>
+      <h3 class="modal-title">BLOQUE 04: GENERACIÓN DE CONTENIDO VISUAL</h3>
+      <div class="modal-body">
+        <p><strong>Metodología de 15 Días:</strong> Se trabaja en conjunto con la dirección de arte para generar piezas maestras, intros, fondos de clima y transiciones para los ~30 temas del repertorio. No se satura con un render único por tema sino con un sistema dinámico que permite combinar cámaras, tipografías generativas y 3D en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Infrastructure -->
+  <div class="modal-backdrop" id="infraModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('infraModal')">&times;</button>
+      <span class="section-tag">[DETALLE_TÉCNICO]</span>
+      <h3 class="modal-title">BLOQUE 05: INFRAESTRUCTURA & SERVIDORES</h3>
+      <div class="modal-body">
+        <p><strong>Hardware de Alta Gama:</strong> Estación de trabajo equipada con procesador multinúcleo de última generación, memoria RAM DDR5 de alta frecuencia y tarjeta gráfica NVIDIA RTX A6000 (48GB VRAM) capaz de renderizar múltiples salidas 4K/8K sin caídas de framerate.</p>
+        <br/>
+        <p><strong>Redundancia:</strong> Segundo equipo de respaldo en caliente (Hot-Standby) con ruteo de switch para garantizar continuidad inmediata ante cualquier eventualidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal QR Beta -->
+  <div class="modal-backdrop" id="qrModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('qrModal')">&times;</button>
+      <span class="section-tag">[DETALLE_BETA]</span>
+      <h3 class="modal-title">BLOQUE 06: PLATAFORMA QR INTERACTIVA (BETA)</h3>
+      <div class="modal-body">
+        <p><strong>Arquitectura de la Solución:</strong></p>
+        <p>1. <strong>Frontend Ligero WebApp:</strong> El espectador escanea el QR y accede a una interfaz web optimizada para móviles (React/Vite PWA liviana) que permite capturar o subir una imagen con filtros del evento.</p>
+        <p>2. <strong>Backend & Moderación Local:</strong> Las fotos son enviadas a un servidor local en el FoH donde un operador puede previsualizar y aprobar las imágenes antes de proyectarlas.</p>
+        <p>3. <strong>Proyección en Canvas:</strong> Las fotos aprobadas se inyectan automáticamente en un mosaico dinámico o galerías gigantes en las pantallas del Movistar Arena.</p>
+        <br/>
+        <p><strong class="accent-amber">⚠ Requisito Crítico de Infraestructura:</strong> En eventos masivos (15.000+ personas), las redes celulares 4G/5G suelen colapsar por saturación. Por lo tanto, para garantizar el éxito de esta activación, la producción debe proveer una red WiFi dedicada para el público o un enlace local exclusivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Printable Container Hidden for PDF Export -->
+  <div id="pdfExportContainer" style="display: none;">
+    <div style="text-align: center; border-bottom: 2px solid #ff1a1a; padding-bottom: 15px; margin-bottom: 25px;">
+      <h1 style="font-size: 28px; margin: 0; color: #fff; letter-spacing: 2px;">DISTORXION ESTUDIO</h1>
+      <p style="margin: 5px 0 0; color: #a1a1aa; font-size: 13px;">PROPUESTA TÉCNICA, CREATIVA Y PRESUPUESTO // MOVISTAR ARENA — FIESTA FA!</p>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <h3 style="color: #ff1a1a; font-size: 16px; border-bottom: 1px solid #333; padding-bottom: 5px; margin-bottom: 10px;">RESUMEN DE CONCEPTOS SELECCIONADOS</h3>
+      <table style="width: 100%; border-collapse: collapse; font-size: 12px;" id="pdfSummaryTable">
+        <!-- Populated dynamically -->
+      </table>
+    </div>
+
+    <div style="background: #15151a; border: 1px solid #ff1a1a; padding: 15px; border-radius: 4px; margin-bottom: 25px;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="font-size: 14px; font-weight: bold; color: #fff;">TOTAL INVERSIÓN (USD):</td>
+          <td style="text-align: right; font-size: 20px; font-weight: bold; color: #ff1a1a;" id="pdfTotalUsd">$ 0 USD</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="font-size: 10px; color: #888; border-top: 1px solid #222; padding-top: 10px;">
+      * Documento base de referencia para armado de propuesta comercial final. No incluye hardware provisto por terceros (pantallas LED, cámaras ni sonido).
+      <br/>Distorxion Estudio — distorxion.com.ar — @distorxion___
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
