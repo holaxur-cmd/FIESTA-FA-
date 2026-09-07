@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: 'laser',
       name: 'Láser Escénico Sincronizado',
-      sub: 'Sincronización láser y video 2 minutos (intro de show o separador durante el show)',
+      sub: 'Sincronización láser y video 2 minutos — operación en vivo durante el show',
       category: 'Láser Escénico',
       usd: 2500,
       active: true
@@ -80,34 +80,34 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 'cameras',
-      name: 'Video en Vivo & Canvas de Cámaras',
-      sub: 'Filtrado en tiempo real con shaders (TouchDesigner) y ruteo',
-      category: 'Realtime & Cámaras',
-      usd: 900,
-      active: true
-    },
-    {
-      id: 'visuals',
-      name: 'Generación de Contenido Visual',
-      sub: '15 días de diseño y animación para ~30 temas del repertorio',
-      category: 'Arte & Dirección',
-      usd: 2500,
+      name: 'Generación de Contenido Visual & Video en Vivo',
+      sub: '10 días de producción visual + captura y procesamiento de cámaras en tiempo real (TouchDesigner / NDI)',
+      category: 'Contenido & Cámaras',
+      usd: 2000,
       active: true
     },
     {
       id: 'servers',
       name: 'Servidores, Red & Infraestructura',
-      sub: '2 servidores (principal + backup), placa PCI x4, 4 salidas 4K, red 10GbE',
+      sub: '1 servidor principal (RTX A6000), placa PCI x4, 4 salidas 4K, red 10GbE',
       category: 'Infraestructura',
-      usd: 800,
+      usd: 400,
       active: true
     },
     {
+      id: 'qrIdent',
+      name: 'Identificación del Público en Vivo',
+      sub: 'Procesamiento en tiempo real del público mediante cámaras — Opción económica',
+      category: 'Público Interactivo (A)',
+      usd: 700,
+      active: false
+    },
+    {
       id: 'qrBeta',
-      name: 'Plataforma Interactiva para Público (Web QR)',
-      sub: 'Recopilación de fotos desde el ingreso, integración en cenefas y pantallas (Beta)',
-      category: 'Experimental (Beta)',
-      usd: 5200,
+      name: 'Plataforma Interactiva Público (BETA)',
+      sub: 'Fotos del público en el ingreso integradas en pantallas durante / previo al show — Escala reducida',
+      category: 'Público Interactivo (B)',
+      usd: 4200,
       active: false
     }
   ];
@@ -130,11 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </td>
         <td>
           <label for="check_${item.id}" style="cursor: pointer;">
-            <span class="table-item-name ${item.id === 'qrBeta' ? 'accent-amber' : ''}">${item.name}</span>
+            <span class="table-item-name ${(item.id === 'qrBeta' || item.id === 'qrIdent') ? 'accent-amber' : ''}">${item.name}</span>
             <span class="table-item-sub">${item.sub}</span>
           </label>
         </td>
-        <td><span class="block-badge ${item.id === 'qrBeta' ? 'badge-amber' : item.category.includes('Láser') ? 'badge-red' : 'badge-cyan'}">${item.category}</span></td>
+        <td><span class="block-badge ${(item.id === 'qrBeta' || item.id === 'qrIdent') ? 'badge-amber' : item.category.includes('Láser') || item.category.includes('Operación') ? 'badge-red' : 'badge-cyan'}">${item.category}</span></td>
         <td class="table-price text-right">$ ${item.usd.toLocaleString('es-AR')} USD</td>
       `;
       tbody.appendChild(tr);
@@ -182,15 +182,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (type === 'base') {
       budgetItems.forEach(i => {
-        i.active = ['visuals', 'liveOps', 'servers'].includes(i.id);
+        i.active = ['cameras', 'liveOps', 'servers'].includes(i.id);
       });
     } else if (type === 'full') {
       budgetItems.forEach(i => {
-        i.active = ['laser', 'liveOps', 'cameras', 'visuals', 'servers'].includes(i.id);
+        i.active = ['laser', 'liveOps', 'cameras', 'servers'].includes(i.id);
       });
     } else if (type === 'interactive') {
       budgetItems.forEach(i => {
-        i.active = true;
+        i.active = ['laser', 'liveOps', 'cameras', 'servers', 'qrBeta'].includes(i.id);
       });
     }
 
