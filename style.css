@@ -1226,7 +1226,7 @@ body::before {
 
 .spec-col-title {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: var(--accent-red);
   margin-bottom: 20px;
@@ -1243,12 +1243,12 @@ body::before {
 }
 
 .spec-item {
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 14px;
+  color: var(--text-secondary);
   font-family: var(--font-primary);
-  line-height: 1.4;
+  line-height: 1.5;
   position: relative;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .spec-item::before {
