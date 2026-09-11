@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Generación de Contenido Visual (3hs de Show)',
       sub: 'Videos y loops para 3hs de show, tracking/etiquetado de rostros, identificación de público en vivo, matriz de cámaras colage y gráfica',
       category: 'Contenido & Visuales',
-      usd: 1800,
+      usd: 1500,
       active: true
     },
     {
