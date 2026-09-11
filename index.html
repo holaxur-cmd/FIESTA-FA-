@@ -32,7 +32,7 @@
       <ul class="nav-links">
         <li><a href="#bloques" class="nav-link">BLOQUES</a></li>
         <li><a href="#cotizador" class="nav-link">VALORES</a></li>
-        <li><a href="#cronograma" class="nav-link">CRONOGRAMA</a></li>
+        <li><a href="#condiciones" class="nav-link">CONDICIONES</a></li>
         <li><a href="#matriz" class="nav-link">ALCANCE</a></li>
         <li><a href="#contacto" class="nav-link">ESTUDIO</a></li>
       </ul>
@@ -98,88 +98,107 @@
 
       <div class="proposals-container">
 
-        <!-- BLOQUE 1: LÁSER ESCÉNICO -->
+        <!-- BLOQUE 1: LÁSER ESCÉNICO & FX SINCRONIZADO -->
         <article class="proposal-row" id="bloque-1">
           <div class="proposal-visual">
-            <img src="img/01-laser.png" alt="LÁSER ESCÉNICO" loading="lazy" />
+            <img src="img/01-laser.png" alt="LÁSER ESCÉNICO & FX SINCRONIZADO" loading="lazy" />
             <div class="proposal-visual-overlay"></div>
           </div>
           <div class="proposal-info">
             <div class="proposal-index-bg">01</div>
-            <div class="proposal-tag badge-red">LÁSER & TIME-CODE</div>
-            <h2 class="proposal-title">LÁSER ESCÉNICO SINCRONIZADO</h2>
-            <p class="proposal-subtitle">OPERACIÓN EN VIVO</p>
+            <div class="proposal-tag badge-red">LÁSER FX & TIME-CODE // SETUP 8X 35W</div>
+            <h2 class="proposal-title">LÁSER ESCÉNICO & FX SINCRONIZADO</h2>
+            <p class="proposal-subtitle">CÁMARA SINCRO + ESCANEO 3D + LOGO ¡FA! 3D + 8 LÁSERES DE 35W (2 GRAFICADO + 6 ESCENARIO) + OPERACIÓN EN SHOW</p>
             <p class="proposal-description">
-              Sincronización láser y video de 2 minutos concebida para la intro del show o como separador de alto impacto durante el show. Programación milimétrica e integración con la narrativa visual, operado en vivo durante la totalidad del espectáculo.
+              Propuesta integral de láser escénico sincronizado con video y cámaras en tiempo real. Incluye efectos visuales de alta precisión como tracking de silueta del artista, intervención geométrica a partir de escaneo 3D, deformación física y colisión del logo de ¡Fa! en 3D, y un despliegue de <strong>8 proyectores láser de 35W</strong> (2 unidades dedicadas a graficado vectorial de alta velocidad y 6 unidades de frente distribuidas en el escenario para techos de luz, abanicos volumétricos y operación ambiental durante todo el show).
             </p>
-            <div class="proposal-specs-grid">
+            <div class="proposal-specs-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
               <div class="spec-col">
-                <div class="spec-col-title">OPERACIÓN EN VIVO</div>
+                <div class="spec-col-title">CÁMARA + LÁSER SINCRO</div>
                 <ul class="spec-list">
-                  <li class="spec-item">Programación milimétrica de cues de láser.</li>
-                  <li class="spec-item">Integración con el sistema TouchDesigner y visuales.</li>
-                  <li class="spec-item">Pruebas de calibración espacial y zonas de seguridad.</li>
-                  <li class="spec-item">Operación técnica en vivo durante todo el show.</li>
+                  <li class="spec-item"><strong>Silueta del artista:</strong> Remarcado en tiempo real del contorno del artista para la apertura o presentación.</li>
+                  <li class="spec-item">Sincronización milimétrica entre señal de cámara y haz láser.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">ESCANEO 3D & LOGO ¡FA!</div>
+                <ul class="spec-list">
+                  <li class="spec-item"><strong>Escaneo previo del artista:</strong> Reconstrucción 3D para proyectar e intervenir su geometría volumétrica con láser.</li>
+                  <li class="spec-item"><strong>Logo ¡Fa! 3D:</strong> Simulación física con colisiones y deformación estructural reactiva al impacto láser.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">2 LÁSERES DE GRAFICADO (35W)</div>
+                <ul class="spec-list">
+                  <li class="spec-item"><strong>Graficado Vectorial:</strong> 2 proyectores 35W dedicados al trazado nítido de siluetas, escaneo 3D y logotipos.</li>
+                  <li class="spec-item">Calibración geométrica y mapping de máxima definición.</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <div class="spec-col-title">6 LÁSERES DE ESCENARIO (35W)</div>
+                <ul class="spec-list">
+                  <li class="spec-item"><strong>6 de frente en escenario:</strong> Distribución frontal para abanicos volumétricos, haces cruzados y profundidad espacial.</li>
+                  <li class="spec-item"><strong>Operación en vivo:</strong> Techos de luz (laser ceilings) y show ambiental sincronizado en todo el Arena.</li>
                 </ul>
               </div>
             </div>
 
             <div class="proposal-footer">
               <div class="proposal-price-box">
-                <span class="price-label">FEE ESTIMADO / REFERENCIA</span>
-                <span class="price-value">$ 2.500</span>
-                <span class="price-currency">USD</span>
+                <span class="price-label">FEE LÁSER FX (SETUP 8 LÁSERES 35W)</span>
+                <span class="price-value" style="color: var(--accent-red);">$ 2.500</span>
+                <span class="price-currency" style="color: var(--accent-red);">USD</span>
               </div>
               <div class="proposal-actions">
-                <button class="btn-details" onclick="openModal('laserModal')">VER DETALLES →</button>
+                <button class="btn-details" onclick="openModal('laserModal')">VER DETALLES FX →</button>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- BLOQUE 2: DISEÑO Y OPERACIÓN EN VIVO -->
+        <!-- BLOQUE 2: OPERACIÓN DE VISUALES EN VIVO -->
         <article class="proposal-row" id="bloque-2">
           <div class="proposal-visual">
-            <img src="img/02-operacion.jpg" alt="DISEÑO Y OPERACIÓN EN VIVO" loading="lazy" />
+            <img src="img/02-operacion.jpg" alt="OPERACIÓN DE VISUALES EN VIVO" loading="lazy" />
             <div class="proposal-visual-overlay"></div>
           </div>
           <div class="proposal-info">
             <div class="proposal-index-bg">02</div>
-            <div class="proposal-tag badge-red">SHOW & OPERACIÓN</div>
-            <h2 class="proposal-title">DISEÑO Y OPERACIÓN EN VIVO</h2>
-            <p class="proposal-subtitle">ARMADO TÉCNICO Y OPERACIÓN EN SHOW</p>
+            <div class="proposal-tag badge-red">SHOW & OPERACIÓN EN VIVO</div>
+            <h2 class="proposal-title">OPERACIÓN DE VISUALES EN VIVO</h2>
+            <p class="proposal-subtitle">OPERACIÓN EN SHOW & PRE-PRODUCCIÓN EN ESTUDIO</p>
             <p class="proposal-description">
-              Utilización durante el show, operado en vivo y armado técnico integral de los sistemas (láser, video, servidores y red) por personal técnico especializado en FoH.
+              Operación técnica en tiempo real durante la totalidad del show desde la isla de FoH, complementada con el trabajo previo de armado, ruteo y pre-producción en estudio para garantizar una ejecución fluida y sincronizada.
             </p>
             
             <div class="proposal-specs-grid">
               <div class="spec-col">
-                <div class="spec-col-title">DISEÑO & ARMADO</div>
+                <div class="spec-col-title">PRE-PRODUCCIÓN</div>
                 <ul class="spec-list">
-                  <li class="spec-item">Armado técnico y montaje en venue.</li>
-                  <li class="spec-item">Configuración e integración de sistemas.</li>
+                  <li class="spec-item">Pre-producción técnica y programación en estudio.</li>
+                  <li class="spec-item">Armado de racks, ruteo y configuración en venue.</li>
                 </ul>
               </div>
               <div class="spec-col">
-                <div class="spec-col-title">TÉCNICA</div>
+                <div class="spec-col-title">OPERACIÓN EN SHOW</div>
                 <ul class="spec-list">
-                  <li class="spec-item">Programación de cues y sincronización.</li>
-                  <li class="spec-item">Monitoreo de señal e infraestructura.</li>
+                  <li class="spec-item">Operación en vivo durante la totalidad del show.</li>
+                  <li class="spec-item">Control de switches de capas y efectos en tiempo real.</li>
                 </ul>
               </div>
               <div class="spec-col">
-                <div class="spec-col-title">OPERATIVA</div>
+                <div class="spec-col-title">PRESENTACIÓN & AMBIENTE</div>
                 <ul class="spec-list">
-                  <li class="spec-item">Operado en vivo durante la totalidad del show.</li>
-                  <li class="spec-item">Presencia de operadores técnicos en FoH.</li>
+                  <li class="spec-item">Presentación en vivo de artistas y momentos clave.</li>
+                  <li class="spec-item">Ambientación visual dinámica según el desarrollo del show.</li>
                 </ul>
               </div>
             </div>
 
             <div class="proposal-footer">
               <div class="proposal-price-box">
-                <span class="price-label">FEE OPERACIÓN Y ARMADO</span>
-                <span class="price-value">$ 1.200</span>
+                <span class="price-label">FEE OPERACIÓN EN VIVO</span>
+                <span class="price-value">$ 900</span>
                 <span class="price-currency">USD</span>
               </div>
               <div class="proposal-actions">
@@ -189,58 +208,56 @@
           </div>
         </article>
 
-        <!-- BLOQUE 3: VIDEO EN VIVO & CONTENIDO VISUAL (UNIFICADO) -->
+        <!-- BLOQUE 3: GENERACIÓN DE CONTENIDO VISUAL // 3HS DE SHOW -->
         <article class="proposal-row proposal-row--dual-image" id="bloque-3">
           <div class="proposal-visual proposal-visual--duo">
-            <img src="img/03-cameras.png" alt="VIDEO EN VIVO & CANVAS DE CÁMARAS" loading="lazy" class="duo-img duo-img--top" />
+            <img src="img/03-cameras.png" alt="MATRIZ DE CÁMARAS & TRACKING" loading="lazy" class="duo-img duo-img--top" />
             <img src="img/04-visuales.jpg" alt="GENERACIÓN DE CONTENIDO VISUAL" loading="lazy" class="duo-img duo-img--bottom" />
             <div class="proposal-visual-overlay"></div>
           </div>
           <div class="proposal-info">
             <div class="proposal-index-bg">03</div>
-            <div class="proposal-tag badge-cyan">CONTENIDO VISUAL & CÁMARAS // 10 DÍAS</div>
-            <h2 class="proposal-title">GENERACIÓN DE CONTENIDO VISUAL & VIDEO EN VIVO</h2>
-            <p class="proposal-subtitle">SISTEMA UNIFICADO: PRODUCCIÓN + CANVAS DE CÁMARAS</p>
+            <div class="proposal-tag badge-cyan">CONTENIDO // 3HS DE SHOW & MATRIZ DE CÁMARAS</div>
+            <h2 class="proposal-title">GENERACIÓN DE CONTENIDO PARA EL SHOW</h2>
+            <p class="proposal-subtitle">VIDEOS & LOOPS (3HS) + MATRIZ DE CÁMARAS + TRACKING & IDENTIFICACIÓN EN VIVO</p>
             <p class="proposal-description">
-              Bloque unificado que integra la generación de contenido visual para el show con el sistema de captura y procesamiento en tiempo real de las señales de cámara del venue. Un proceso de trabajo continuo sobre las cámaras y el contenido durante 10 días.
+              Desarrollo integral del universo visual para el show completo de 3 horas. Combina diseño y render de loops adaptativos con ingeniería de video en tiempo real: efectos de seguimiento y etiquetado de rostros, identificación del público en vivo sin intervención del usuario, matriz multicámara tipo collage y gráficas de presentación de artistas.
             </p>
             
             <div class="proposal-specs-grid">
               <div class="spec-col">
-                <div class="spec-col-title cyan">CONTENIDO VISUAL</div>
+                <div class="spec-col-title cyan">VIDEOS & LOOPS (3HS)</div>
                 <ul class="spec-list cyan">
-                  <li class="spec-item">10 días de diseño, animación 2D/3D y producción de piezas clave.</li>
-                  <li class="spec-item">Sistema modular de loops adaptativos según la intensidad del tema.</li>
-                  <li class="spec-item">Masterización en resoluciones nativas del canvas LED del estadio.</li>
-                  <li class="spec-item">Co-diseño con la dirección creativa del show.</li>
+                  <li class="spec-item">Generación de material visual y loops para las 3 horas completas de show.</li>
+                  <li class="spec-item">Piezas sincronizadas con la dinámica musical y transiciones.</li>
+                  <li class="spec-item">Masterización a resolución nativa del canvas LED del estadio.</li>
                 </ul>
               </div>
               <div class="spec-col">
-                <div class="spec-col-title cyan">VIDEO EN VIVO & CÁMARAS</div>
+                <div class="spec-col-title cyan">SEGUIMIENTO, PÚBLICO & CÁMARAS</div>
                 <ul class="spec-list cyan">
-                  <li class="spec-item">Recepción de señales de cámara mediante capturadoras profesionales SDI/NDI.</li>
-                  <li class="spec-item">Mezclas híbridas: cámaras en vivo + visuales generativos.</li>
-                  <li class="spec-item">Filtrado y efectos reactivos por shaders (TouchDesigner).</li>
-                  <li class="spec-item">Ruteo y control de switch de capas en tiempo real durante el show.</li>
+                  <li class="spec-item"><strong>Visión en tiempo real:</strong> Identificación del público en vivo y seguimiento facial (Face Tracking).</li>
+                  <li class="spec-item"><strong>Matriz de cámaras:</strong> Collage dinámico multicámara de señales de video.</li>
+                  <li class="spec-item">Nombres de artistas, zócalos y ambientación de visuales en pantalla.</li>
                 </ul>
               </div>
             </div>
 
             <div class="proposal-footer">
               <div class="proposal-price-box">
-                <span class="price-label">VALOR UNIFICADO</span>
-                <span class="price-value" style="color: var(--accent-cyan);">$ 2.000</span>
+                <span class="price-label">FEE CONTENIDO (3HS) + CÁMARAS</span>
+                <span class="price-value" style="color: var(--accent-cyan);">$ 1.800</span>
                 <span class="price-currency" style="color: var(--accent-cyan);">USD</span>
               </div>
               <div class="proposal-actions">
-                <button class="btn-details" onclick="openModal('camerasModal')">VER DETALLES →</button>
+                <button class="btn-details" onclick="openModal('visualsModal')">VER DETALLES →</button>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- BLOQUE 4 (ex-05): SERVIDORES, RED & INFRAESTRUCTURA -->
-        <article class="proposal-row" id="bloque-5">
+        <!-- BLOQUE 4: SERVIDORES, RED & INFRAESTRUCTURA -->
+        <article class="proposal-row" id="bloque-4">
           <div class="proposal-visual">
             <img src="img/05-servidores.jpg" alt="SERVIDORES, RED & INFRAESTRUCTURA" loading="lazy" />
             <div class="proposal-visual-overlay"></div>
@@ -251,14 +268,14 @@
             <h2 class="proposal-title">SERVIDORES, RED & INFRAESTRUCTURA</h2>
             <p class="proposal-subtitle">PROCESAMIENTO MASIVO EN GPU</p>
             <p class="proposal-description">
-              Infraestructura de hardware de grado broadcast con procesamiento masivo en GPU. 1 servidor principal con placa de entrada y salida PCI x 4 (4 salidas 4K) y red 10GbE.
+              Infraestructura de hardware de grado broadcast con procesamiento masivo en GPU. 1 servidor principal RTX A6000 con 48 GB de VRAM GDDR6 (4 salidas 4K), placa PCI x 4 y red 10GbE.
             </p>
             <div class="proposal-specs-grid">
               <div class="spec-col">
                 <div class="spec-col-title cyan">TÉCNICA</div>
                 <ul class="spec-list cyan">
-                  <li class="spec-item">1 servidor principal (RTX A6000 + 8K IN).</li>
-                  <li class="spec-item">Placa de entrada y salida PCI x 4 (4 salidas 4K).</li>
+                  <li class="spec-item">1 servidor principal RTX A6000 48 GB de VRAM GDDR6 (4 salidas 4K).</li>
+                  <li class="spec-item">Placa de entrada y salida PCI x 4.</li>
                   <li class="spec-item">Red de Alta Velocidad: Switches dedicados 10GbE.</li>
                 </ul>
               </div>
@@ -284,63 +301,17 @@
           </div>
         </article>
 
-        <!-- BLOQUE 5 (ex-06): PLATAFORMA INTERACTIVA — OPCIÓN A: IDENTIFICACIÓN DE PÚBLICO -->
-        <article class="proposal-row" id="bloque-6a">
-          <div class="proposal-visual">
-            <img src="img/06-beta.png" alt="IDENTIFICACIÓN DEL PÚBLICO" loading="lazy" />
-            <div class="proposal-visual-overlay"></div>
-          </div>
-          <div class="proposal-info">
-            <div class="proposal-index-bg">05</div>
-            <div class="proposal-tag badge-amber">OPCIÓN A // IDENTIFICACIÓN</div>
-            <h2 class="proposal-title">IDENTIFICACIÓN DEL PÚBLICO EN VIVO</h2>
-            <p class="proposal-subtitle">PROCESAMIENTO EN TIEMPO REAL — OPCIÓN ECONÓMICA</p>
-            <p class="proposal-description">
-              Sistema de identificación del público procesado en tiempo real mediante cámaras, enviando los datos al servidor central de producción. Solución eficiente y económica para integrar la presencia del público en el espectáculo sin necesidad de intervención del espectador.
-            </p>
-            
-            <div class="proposal-specs-grid">
-              <div class="spec-col">
-                <div class="spec-col-title amber">TÉCNICA</div>
-                <ul class="spec-list amber">
-                  <li class="spec-item">Procesamiento en vivo del público mediante visión computacional.</li>
-                  <li class="spec-item">Envío de datos al servidor central de producción en tiempo real.</li>
-                  <li class="spec-item">Integración con el pipeline visual del show.</li>
-                </ul>
-              </div>
-              <div class="spec-col">
-                <div class="spec-col-title amber">OPERATIVA</div>
-                <ul class="spec-list amber">
-                  <li class="spec-item">No requiere interacción del público.</li>
-                  <li class="spec-item">Calibración y pruebas previas en el venue.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="proposal-footer">
-              <div class="proposal-price-box">
-                <span class="price-label">FEE ESTIMADO — OPCIÓN A</span>
-                <span class="price-value" style="color: var(--accent-amber);">$ 700</span>
-                <span class="price-currency" style="color: var(--accent-amber);">USD</span>
-              </div>
-              <div class="proposal-actions">
-                <button class="btn-details" onclick="openModal('qrModalA')">VER DETALLES →</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- BLOQUE 6 (ex-06): PLATAFORMA INTERACTIVA — OPCIÓN B: BETA QR -->
-        <article class="proposal-row" id="bloque-6b">
+        <!-- BLOQUE 5: PLATAFORMA INTERACTIVA — BETA QR (OPCIONAL) -->
+        <article class="proposal-row" id="bloque-5">
           <div class="proposal-visual">
             <img src="img/06-beta.png" alt="PLATAFORMA INTERACTIVA BETA" loading="lazy" />
             <div class="proposal-visual-overlay"></div>
           </div>
           <div class="proposal-info">
-            <div class="proposal-index-bg">06</div>
-            <div class="proposal-tag badge-amber">OPCIÓN B // PLATAFORMA INTERACTIVA BETA</div>
+            <div class="proposal-index-bg">05</div>
+            <div class="proposal-tag badge-amber">MÓDULO ADICIONAL // PLATAFORMA INTERACTIVA BETA</div>
             <h2 class="proposal-title">PLATAFORMA INTERACTIVA PÚBLICO (BETA)</h2>
-            <p class="proposal-subtitle">EXPERIENCIA DE INGRESO — ESCALA REDUCIDA</p>
+            <p class="proposal-subtitle">EXPERIENCIA DE INGRESO — ACTIVACIÓN WEB QR</p>
             <p class="proposal-description">
               Activación interactiva en la entrada del show: las personas que ingresan son fotografiadas con una aplicación web propia accesible por QR. Las fotos recopiladas se utilizan dentro de las configuraciones en pantalla durante o previo al show, integrando al público en la experiencia visual del espectáculo.
             </p>
@@ -351,7 +322,7 @@
                 <ul class="spec-list amber">
                   <li class="spec-item">Captura de fotos del público en el ingreso al show.</li>
                   <li class="spec-item">Las fotos son integradas en pantallas durante o previo al show.</li>
-                  <li class="spec-item">Experiencia de escala reducida, enfocada en el ingreso.</li>
+                  <li class="spec-item">Experiencia interactiva enfocada en el ingreso.</li>
                 </ul>
               </div>
               <div class="spec-col">
@@ -366,7 +337,7 @@
 
             <div class="proposal-footer">
               <div class="proposal-price-box">
-                <span class="price-label">FEE ESTIMADO — OPCIÓN B</span>
+                <span class="price-label">FEE ESTIMADO — MÓDULO BETA</span>
                 <span class="price-value" style="color: var(--accent-amber);">$ 4.200</span>
                 <span class="price-currency" style="color: var(--accent-amber);">USD</span>
               </div>
@@ -433,59 +404,108 @@
     </div>
   </section>
 
-  <!-- Section 3: Cronograma de Trabajo -->
-  <section class="section" id="cronograma">
+  <!-- Section 3: Condiciones Generales & Plazos de Pago (Legal) -->
+  <section class="section" id="condiciones">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">[TIMELINE_CRÍTICO]</span>
-        <h2 class="section-title">PLANIFICACIÓN & <span class="accent-red">HITOS</span></h2>
+        <span class="section-tag">[MARCO_LEGAL_Y_COMERCIAL]</span>
+        <h2 class="section-title">CONDICIONES <span class="accent-red">GENERALES</span> & PLAZOS</h2>
         <p class="section-desc">
-          Cronograma proyectado para garantizar los estándares técnicos y de estabilidad requeridos en un venue de escala Arena.
+          Pautas comerciales, modalidades de pago, cronograma de anticipos y cláusulas de mora para los servicios de Distorxion Studio.
         </p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-step">
-          <div class="step-phase">FASE 1: PRE-PRODUCCIÓN</div>
-          <h4 class="step-title">DISEÑO CONCEPTUAL & REUNIONES</h4>
-          <ul class="step-list">
-            <li>Reunión de alineación con Dirección Creativa.</li>
-            <li>Definición de paleta visual, momentos y guión técnico.</li>
-            <li>Mapeo de señales de cámara y especificaciones del venue.</li>
-          </ul>
+      <div class="conditions-grid">
+        <!-- CARD 1: FORMAS DE PAGO -->
+        <div class="condition-card">
+          <div>
+            <div class="condition-header">
+              <div class="condition-icon">01</div>
+              <span class="block-badge badge-red">MODALIDAD</span>
+            </div>
+            <h3 class="condition-title">FORMAS DE PAGO</h3>
+            <p class="condition-desc">Instrumentación financiera admitida para la contratación de servicios y equipamiento.</p>
+            <ul class="condition-list">
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span><strong>Efectivo:</strong> Dólares Estadounidenses (USD) o Moneda Nacional según cotización acordada.</span>
+              </li>
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span><strong>Transferencia Bancaria:</strong> Cuenta bancaria nacional / internacional o CBU/CVU.</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="timeline-step active-step">
-          <div class="step-phase">FASE 2: DESARROLLO (15 DÍAS)</div>
-          <h4 class="step-title">PRODUCCIÓN DE VISUALES & SHADERS</h4>
-          <ul class="step-list">
-            <li>Generación de loops, motion 2D/3D y clips de temas.</li>
-            <li>Programación de pipelines de efectos en TouchDesigner.</li>
-            <li>Programación de cues de láser escénico y time-code.</li>
-            <li>Desarrollo de la app web QR y pruebas de concurrencia.</li>
-          </ul>
+        <!-- CARD 2: PLAZOS DE PAGO (50% / 50%) -->
+        <div class="condition-card condition-card--highlight">
+          <div>
+            <div class="condition-header">
+              <div class="condition-icon">02</div>
+              <span class="block-badge badge-red">50% / 50%</span>
+            </div>
+            <h3 class="condition-title">PLAZOS DE PAGO</h3>
+            <p class="condition-desc">Esquema escalonado para asegurar reserva técnica y puesta en marcha del desarrollo.</p>
+            <ul class="condition-list">
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span><strong>Adelantado 50%:</strong> A modo de reserva efectiva de fecha, bloqueo de equipamiento técnico especializado y horas de estudio.</span>
+              </li>
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span><strong>50% Restante:</strong> Saldo final del valor presupuestado a cancelarse durante la <strong>semana previa al evento</strong>.</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="timeline-step venue-step">
-          <div class="step-phase">FASE 3: ENSAYOS & RED (1-2 SEM)</div>
-          <h4 class="step-title">INTEGRACIÓN & CALIBRACIÓN</h4>
-          <ul class="step-list">
-            <li>Pruebas de estrés de servidores y redundancia.</li>
-            <li>Ensayo general con banda y sincronización SMPTE.</li>
-            <li>Alineación y calibración de proyectores láser.</li>
-            <li>Auditoría de red WiFi en el estadio para el módulo QR.</li>
-          </ul>
+        <!-- CARD 3: CLÁUSULAS POR MORA -->
+        <div class="condition-card condition-card--highlight">
+          <div>
+            <div class="condition-header">
+              <div class="condition-icon">03</div>
+              <span class="block-badge badge-red">CLÁUSULA MORA</span>
+            </div>
+            <h3 class="condition-title">PENALIDADES POR MORA</h3>
+            <p class="condition-desc">Vencidos los plazos estipulados de liquidación, se aplicarán recargos porcentuales sobre el valor total:</p>
+            <div class="penalty-pill-group">
+              <div class="penalty-pill">
+                <span>Pasados <strong>7 días</strong> del plazo estipulado</span>
+                <strong>+2% EXTRA</strong>
+              </div>
+              <div class="penalty-pill">
+                <span>Pasados <strong>15 días</strong> del plazo estipulado</span>
+                <strong>+5% EXTRA</strong>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="timeline-step active-step">
-          <div class="step-phase">FASE 4: SHOW EN VIVO</div>
-          <h4 class="step-title">EJECUCIÓN // MOVISTAR ARENA</h4>
-          <ul class="step-list">
-            <li>Montaje temprano de servidores y control en FoH.</li>
-            <li>Prueba de señal multicámara y canvas LED.</li>
-            <li>Operación técnica en vivo durante todo el show.</li>
-            <li>Soporte y contingencia activa.</li>
-          </ul>
+        <!-- CARD 4: PLAZOS DE TRABAJO -->
+        <div class="condition-card condition-card--cyan">
+          <div>
+            <div class="condition-header">
+              <div class="condition-icon">04</div>
+              <span class="block-badge badge-cyan">PRODUCCIÓN</span>
+            </div>
+            <h3 class="condition-title">PLAZOS DE TRABAJO</h3>
+            <p class="condition-desc">Cronograma operativo y entrega de piezas para garantizar la excelencia del espectáculo.</p>
+            <ul class="condition-list">
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span>Inicio inmediato de pre-producción contra confirmación del 50% de anticipo.</span>
+              </li>
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span>Alineación de piezas de video y cues de láser con Dirección Creativa.</span>
+              </li>
+              <li class="condition-item">
+                <span class="condition-item-bullet">▹</span>
+                <span>Congelamiento de versiones y ensayos previos al montaje en Movistar Arena.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -515,15 +535,15 @@
           <tbody>
             <tr>
               <td><strong>Servidor Principal de Procesamiento</strong></td>
-              <td><span class="badge-tag badge-red">SÍ (RTX A6000 + 8K IN)</span></td>
+              <td><span class="badge-tag badge-red">SÍ (1x RTX A6000 48GB VRAM)</span></td>
               <td>Alimentación estabilizada 220V</td>
-              <td>Rack principal con SAI/UPS.</td>
+              <td>1 Servidor único con 4 salidas 4K, Placa PCI x4 y Red 10GbE.</td>
             </tr>
             <tr>
               <td><strong>Servidor de Respaldo / Redundancia</strong></td>
-              <td><span class="badge-tag badge-red">SÍ</span></td>
-              <td>Espacio físico en FoH / Control</td>
-              <td>Segundo sistema sincronizado.</td>
+              <td><span class="badge-tag" style="background: rgba(255,255,255,0.08); color: #888;">NO (Servidor Único)</span></td>
+              <td>-</td>
+              <td>Configuración basada en 1 solo servidor principal.</td>
             </tr>
             <tr>
               <td><strong>Señales de Cámaras en Vivo</strong></td>
@@ -539,9 +559,9 @@
             </tr>
             <tr>
               <td><strong>Proyectores Láser & Rigging</strong></td>
-              <td>Programación, cues y operación</td>
-              <td><span class="badge-tag badge-cyan">SÍ (Equipos Láser físicos y colgado)</span></td>
-              <td>Opcional: Distorxion puede cotizar hardware láser.</td>
+              <td>Programación, cues, diseño de FX y operación (Setup 8 Láseres 35W)</td>
+              <td><span class="badge-tag badge-cyan">SÍ (8 Equipos Láser 35W físicos y colgado)</span></td>
+              <td>Opcional: Distorxion puede cotizar y proveer hardware láser.</td>
             </tr>
             <tr>
               <td><strong>Infraestructura de Red para Módulo QR</strong></td>
@@ -616,12 +636,19 @@
   <div class="modal-backdrop" id="laserModal">
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeModal('laserModal')">&times;</button>
-      <span class="section-tag">[DETALLE_TÉCNICO]</span>
-      <h3 class="modal-title">BLOQUE 01: LÁSER ESCÉNICO</h3>
+      <span class="section-tag">[DETALLE_TÉCNICO_FX]</span>
+      <h3 class="modal-title">BLOQUE 01: LÁSER ESCÉNICO & FX SINCRONIZADO (8 LÁSERES 35W)</h3>
       <div class="modal-body">
-        <p><strong>Sincronización Laser y Video (2 Minutos):</strong> Intervención audiovisual concebida como intro de show o separador de alto impacto durante la presentación. Control mediante protocolos estándar (ILDA / Pangolin Beyond / OSC) vinculados a la línea de tiempo y visuales.</p>
+        <p><strong>Propuesta Integral Láser FX (Setup 8 Láseres 35W):</strong></p>
         <br/>
-        <p><strong>Seguridad y Normativa:</strong> Se configuran zonas de corte (Safety Zones) y máscaras para evitar impacto directo en lentes de cámaras del venue o zonas no permitidas del público.</p>
+        <p>1. <strong>Cámara + Láser Sincro:</strong> Remarcado en tiempo real del contorno y silueta del artista para la apertura o presentación. Sincronización milimétrica entre la captura de video y la deflexión de los haces láser.</p>
+        <p>2. <strong>Escaneo 3D & Geometría:</strong> Escaneo previo de artistas para modelado 3D e intervención directa de su geometría con proyección láser volumétrica.</p>
+        <p>3. <strong>Logo ¡Fa! 3D Interactivo:</strong> Modelo 3D del logo ¡Fa! interactuando con físicas de colisión de objetos y deformación estructural a partir del impacto láser.</p>
+        <p>4. <strong>2 Láseres de 35W para Graficado:</strong> 2 proyectores de alta potencia dedicados exclusivamente al trazado vectorial, silueta en vivo y gráficos de alta definición.</p>
+        <p>5. <strong>6 Láseres de 35W de Frente en Escenario:</strong> 6 proyectores distribuidos a lo largo del escenario para abanicos volumétricos masivos, haces cruzados y techos de luz (laser ceilings).</p>
+        <p>6. <strong>Operación Ambiental en Vivo:</strong> Cobertura lumínica integral durante el show sincronizada por código de tiempo y operación en directo.</p>
+        <br/>
+        <p><strong>Seguridad y Normativa:</strong> Zonas de seguridad (Safety Zones) y máscaras para preservar la integridad visual de cámaras y público.</p>
       </div>
     </div>
   </div>
@@ -631,37 +658,31 @@
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeModal('operacionModal')">&times;</button>
       <span class="section-tag">[DETALLE_TÉCNICO]</span>
-      <h3 class="modal-title">BLOQUE 02: DISEÑO Y OPERACIÓN EN VIVO</h3>
+      <h3 class="modal-title">BLOQUE 02: OPERACIÓN DE VISUALES EN VIVO</h3>
       <div class="modal-body">
-        <p><strong>Armado Técnico & Programación:</strong> Configuración e integración en venue de los sistemas de adquisición de señal, red y consolas de control. Calibración en tiempo real antes y durante los ensayos generales.</p>
+        <p><strong>Operación en Show & Pre-producción ($ 900 USD):</strong></p>
         <br/>
-        <p><strong>Ejecución durante el Show:</strong> Operado en vivo por personal técnico especializado desde la isla de FoH, garantizando la utilización durante el show, el operado y el armado técnico integral.</p>
+        <p>1. <strong>Pre-producción en Estudio:</strong> Armado técnico, programación de cues, ruteo de señales y testeo previo de latencia.</p>
+        <p>2. <strong>Operación en FoH:</strong> Control técnico en vivo durante la totalidad del show por operador especializado.</p>
+        <p>3. <strong>Presentación de Artistas & Ambientación:</strong> Disparo sincronizado de presentaciones de artistas, transiciones y adaptación visual a los momentos musicales.</p>
       </div>
     </div>
   </div>
 
-  <!-- Modal Cameras -->
-  <div class="modal-backdrop" id="camerasModal">
-    <div class="modal-box">
-      <button class="modal-close-btn" onclick="closeModal('camerasModal')">&times;</button>
-      <span class="section-tag">[DETALLE_TÉCNICO]</span>
-      <h3 class="modal-title">BLOQUE 03: PROCESAMIENTO DE CÁMARAS</h3>
-      <div class="modal-body">
-        <p><strong>Pipeline TouchDesigner:</strong> Las señales de las cámaras ingresan por capturadoras de baja latencia (Blackmagic DeckLink 8K / UltraStudio) y son procesadas a 60 FPS mediante GLSL shaders personalizados que aplican efectos dinámicos como distortion, pixel sorting, glitch reactivo, feedback loop y corrección de color sincronizada con los temas musicales.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Cameras / Visuals (Unificado) -->
+  <!-- Modal Cameras / Visuals -->
   <div class="modal-backdrop" id="visualsModal">
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeModal('visualsModal')">&times;</button>
       <span class="section-tag">[DETALLE_TÉCNICO]</span>
-      <h3 class="modal-title">BLOQUE 03: CONTENIDO VISUAL & VIDEO EN VIVO</h3>
+      <h3 class="modal-title">BLOQUE 03: GENERACIÓN DE CONTENIDO VISUAL // 3HS</h3>
       <div class="modal-body">
-        <p><strong>Proceso Unificado (10 días):</strong> Se trabaja de forma integrada sobre el contenido visual y el sistema de cámaras. Se generan piezas maestras, intros, fondos y transiciones para el repertorio del show, combinadas con el pipeline de efectos en tiempo real sobre las señales de cámara del venue.</p>
+        <p><strong>Contenido para 3hs de Show & Matriz de Cámaras ($ 1.800 USD):</strong></p>
         <br/>
-        <p><strong>Pipeline TouchDesigner:</strong> Las señales de las cámaras ingresan por capturadoras de baja latencia (Blackmagic DeckLink) y son procesadas mediante GLSL shaders que aplican efectos dinámicos sincronizados con los visuales generados.</p>
+        <p>1. <strong>Loops & Videos (3hs de show):</strong> Producción integral de clips, fondos y loops adaptativos para cubrir las 3 horas de espectáculo.</p>
+        <p>2. <strong>Efectos de Cámara & Face Tracking:</strong> Sistema de seguimiento facial y etiquetado reactivo en tiempo real sobre las señales de cámara del estadio.</p>
+        <p>3. <strong>Identificación de Público en Vivo:</strong> Procesamiento en vivo mediante visión computacional para integrar al público a las pantallas sin requerir su intervención.</p>
+        <p>4. <strong>Matriz de Cámaras:</strong> Composición multicámara dinámica (collage) ruteada en tiempo real hacia las pantallas LED del venue.</p>
+        <p>5. <strong>Identidad & Gráfica de Artistas:</strong> Zócalos, tipografías y estética personalizada para cada momento del show.</p>
       </div>
     </div>
   </div>
@@ -673,33 +694,19 @@
       <span class="section-tag">[DETALLE_TÉCNICO]</span>
       <h3 class="modal-title">BLOQUE 04: INFRAESTRUCTURA & SERVIDORES</h3>
       <div class="modal-body">
-        <p><strong>Servidor Principal:</strong> Estación de trabajo equipada con procesador multinúcleo de última generación, memoria RAM DDR5 de alta frecuencia y tarjeta gráfica NVIDIA RTX A6000 (48GB VRAM) capaz de renderizar múltiples salidas 4K/8K sin caídas de framerate.</p>
+        <p><strong>1 Servidor Principal:</strong> Estación de trabajo equipada con tarjeta gráfica NVIDIA RTX A6000 (48 GB de VRAM GDDR6), optimizada para renderizado masivo y gráficos en tiempo real con 4 salidas 4K.</p>
         <br/>
-        <p><strong>Red & Conectividad:</strong> Placa de entrada/salida PCI x4 con 4 salidas 4K y switch dedicado 10GbE para garantizar latencia mínima en la transmisión de señal.</p>
+        <p><strong>Entradas/Salidas & Red:</strong> Placa de entrada y salida PCI x 4 y Red de Alta Velocidad con switches dedicados 10GbE para transporte de señal sin latencia.</p>
       </div>
     </div>
   </div>
 
-  <!-- Modal QR Opción A: Identificación de Público -->
-  <div class="modal-backdrop" id="qrModalA">
-    <div class="modal-box">
-      <button class="modal-close-btn" onclick="closeModal('qrModalA')">&times;</button>
-      <span class="section-tag">[DETALLE_TÉCNICO]</span>
-      <h3 class="modal-title">BLOQUE 05A: IDENTIFICACIÓN DEL PÚBLICO EN VIVO</h3>
-      <div class="modal-body">
-        <p><strong>Sistema de Visión en Tiempo Real:</strong> Procesamiento del público mediante cámaras del venue, detectando y caracterizando la presencia del público en vivo. Los datos son enviados al servidor central de producción para ser integrados en el pipeline visual del show.</p>
-        <br/>
-        <p><strong>Sin intervención del espectador:</strong> El público no necesita interactuar. El sistema opera de forma automática y transparente, capturando la energía colectiva del público para alimentar la experiencia visual.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal QR Opción B: Beta Interactivo -->
+  <!-- Modal QR Beta Interactivo -->
   <div class="modal-backdrop" id="qrModal">
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeModal('qrModal')">&times;</button>
       <span class="section-tag">[DETALLE_BETA]</span>
-      <h3 class="modal-title">BLOQUE 06: PLATAFORMA INTERACTIVA PÚBLICO (BETA)</h3>
+      <h3 class="modal-title">BLOQUE 05: PLATAFORMA INTERACTIVA PÚBLICO (BETA)</h3>
       <div class="modal-body">
         <p><strong>Activación en el Ingreso:</strong> En la entrada del show, el público escanea un QR y accede a una app web liviana para ser fotografiado o subir una foto propia. Las imágenes recopiladas se integran en las pantallas del arena durante o previo al show.</p>
         <br/>
@@ -714,29 +721,43 @@
 
   <!-- Printable Container Hidden for PDF Export -->
   <div id="pdfExportContainer" style="display: none;">
-    <div style="text-align: center; border-bottom: 2px solid #ff1a1a; padding-bottom: 15px; margin-bottom: 25px;">
-      <h1 style="font-size: 28px; margin: 0; color: #fff; letter-spacing: 2px;">DISTORXION ESTUDIO</h1>
-      <p style="margin: 5px 0 0; color: #a1a1aa; font-size: 13px;">PROPUESTA TÉCNICA, CREATIVA Y PRESUPUESTO // MOVISTAR ARENA — FIESTA FA!</p>
+    <div style="text-align: center; border-bottom: 2px solid #ff1a1a; padding-bottom: 15px; margin-bottom: 20px;">
+      <h1 style="font-size: 26px; margin: 0; color: #fff; letter-spacing: 2px;">DISTORXION ESTUDIO</h1>
+      <p style="margin: 5px 0 0; color: #a1a1aa; font-size: 12px;">PROPUESTA TÉCNICA, CREATIVA Y PRESUPUESTO // MOVISTAR ARENA — FIESTA FA!</p>
     </div>
 
-    <div style="margin-bottom: 25px;">
-      <h3 style="color: #ff1a1a; font-size: 16px; border-bottom: 1px solid #333; padding-bottom: 5px; margin-bottom: 10px;">RESUMEN DE CONCEPTOS SELECCIONADOS</h3>
-      <table style="width: 100%; border-collapse: collapse; font-size: 12px;" id="pdfSummaryTable">
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: #ff1a1a; font-size: 14px; border-bottom: 1px solid #333; padding-bottom: 5px; margin-bottom: 10px;">RESUMEN DE CONCEPTOS SELECCIONADOS</h3>
+      <table style="width: 100%; border-collapse: collapse; font-size: 11px;" id="pdfSummaryTable">
         <!-- Populated dynamically -->
       </table>
     </div>
 
-    <div style="background: #15151a; border: 1px solid #ff1a1a; padding: 15px; border-radius: 4px; margin-bottom: 25px;">
+    <div style="background: #15151a; border: 1px solid #ff1a1a; padding: 12px 15px; border-radius: 4px; margin-bottom: 20px;">
       <table style="width: 100%;">
         <tr>
-          <td style="font-size: 14px; font-weight: bold; color: #fff;">TOTAL INVERSIÓN (USD):</td>
-          <td style="text-align: right; font-size: 20px; font-weight: bold; color: #ff1a1a;" id="pdfTotalUsd">$ 0 USD</td>
+          <td style="font-size: 13px; font-weight: bold; color: #fff;">TOTAL INVERSIÓN ESTIMADA (USD):</td>
+          <td style="text-align: right; font-size: 18px; font-weight: bold; color: #ff1a1a;" id="pdfTotalUsd">$ 0 USD</td>
         </tr>
       </table>
     </div>
 
-    <div style="font-size: 10px; color: #888; border-top: 1px solid #222; padding-top: 10px;">
-      * Documento base de referencia para armado de propuesta comercial final. No incluye hardware provisto por terceros (pantallas LED, cámaras ni sonido).
+    <div style="background: #101014; border: 1px solid #282830; padding: 12px; border-radius: 4px; margin-bottom: 15px; font-size: 10px; color: #ccc;">
+      <strong style="color: #ff1a1a; display: block; margin-bottom: 4px; font-size: 11px;">CONDICIONES GENERALES & PLAZOS DE PAGO:</strong>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div>
+          • <strong>Formas de pago:</strong> Efectivo o Transferencia bancaria.<br/>
+          • <strong>Plazo de pago:</strong> 50% Adelantado (reserva de fecha y equipos) + 50% restante la semana previa al evento.
+        </div>
+        <div>
+          • <strong>Mora +7 días:</strong> Se cobrará un 2% extra sobre el total presupuestado.<br/>
+          • <strong>Mora +15 días:</strong> Se cobrará un 5% extra sobre el total presupuestado.
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size: 9px; color: #777; border-top: 1px solid #222; padding-top: 8px;">
+      * Documento base de referencia para contratación técnica y artística de Distorxion Studio.
       <br/>Distorxion Estudio — distorxion.com.ar — @distorxion___
     </div>
   </div>

@@ -64,49 +64,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const budgetItems = [
     {
       id: 'laser',
-      name: 'Láser Escénico Sincronizado',
-      sub: 'Sincronización láser y video 2 minutos — operación en vivo durante el show',
-      category: 'Láser Escénico',
+      name: 'Láser Escénico & FX Sincronizado (8 Láseres 35W)',
+      sub: '8 láseres de 35W: 2 para graficado (silueta artista, escaneo 3D, logo ¡Fa! 3D) + 6 de frente en escenario (haces volumétricos, techos de luz y show en vivo)',
+      category: 'Láser FX Escénico',
       usd: 2500,
       active: true
     },
     {
       id: 'liveOps',
-      name: 'Diseño y Operación en Vivo',
-      sub: 'Armado técnico, utilización durante el show y operado en vivo por personal técnico especializado en FoH',
+      name: 'Operación de Visuales en Vivo',
+      sub: 'Operación en show desde FoH, pre-producción en estudio, presentación en vivo de artistas y ambientación',
       category: 'Operación en Vivo',
-      usd: 1200,
+      usd: 900,
       active: true
     },
     {
-      id: 'cameras',
-      name: 'Generación de Contenido Visual & Video en Vivo',
-      sub: '10 días de producción visual + captura y procesamiento de cámaras en tiempo real (TouchDesigner / NDI)',
-      category: 'Contenido & Cámaras',
-      usd: 2000,
+      id: 'contentGen',
+      name: 'Generación de Contenido Visual (3hs de Show)',
+      sub: 'Videos y loops para 3hs de show, tracking/etiquetado de rostros, identificación de público en vivo, matriz de cámaras colage y gráfica',
+      category: 'Contenido & Visuales',
+      usd: 1800,
       active: true
     },
     {
       id: 'servers',
       name: 'Servidores, Red & Infraestructura',
-      sub: '1 servidor principal (RTX A6000), placa PCI x4, 4 salidas 4K, red 10GbE',
+      sub: '1 servidor principal RTX A6000 48 GB GDDR6 (4 salidas 4K), Placa PCI x4, Switches 10GbE',
       category: 'Infraestructura',
       usd: 400,
       active: true
     },
     {
-      id: 'qrIdent',
-      name: 'Identificación del Público en Vivo',
-      sub: 'Procesamiento en tiempo real del público mediante cámaras — Opción económica',
-      category: 'Público Interactivo (A)',
-      usd: 700,
-      active: false
-    },
-    {
       id: 'qrBeta',
       name: 'Plataforma Interactiva Público (BETA)',
-      sub: 'Fotos del público en el ingreso integradas en pantallas durante / previo al show — Escala reducida',
-      category: 'Público Interactivo (B)',
+      sub: 'Fotos del público en el ingreso integradas en pantallas durante / previo al show — Activación web QR',
+      category: 'Público Interactivo (BETA)',
       usd: 4200,
       active: false
     }
@@ -130,11 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </td>
         <td>
           <label for="check_${item.id}" style="cursor: pointer;">
-            <span class="table-item-name ${(item.id === 'qrBeta' || item.id === 'qrIdent') ? 'accent-amber' : ''}">${item.name}</span>
+            <span class="table-item-name ${item.id === 'qrBeta' ? 'accent-amber' : item.id === 'laser' ? 'accent-red font-bold' : ''}">${item.name}</span>
             <span class="table-item-sub">${item.sub}</span>
           </label>
         </td>
-        <td><span class="block-badge ${(item.id === 'qrBeta' || item.id === 'qrIdent') ? 'badge-amber' : item.category.includes('Láser') || item.category.includes('Operación') ? 'badge-red' : 'badge-cyan'}">${item.category}</span></td>
+        <td><span class="block-badge ${item.id === 'qrBeta' ? 'badge-amber' : item.category.includes('Láser') || item.category.includes('Operación') ? 'badge-red' : 'badge-cyan'}">${item.category}</span></td>
         <td class="table-price text-right">$ ${item.usd.toLocaleString('es-AR')} USD</td>
       `;
       tbody.appendChild(tr);
@@ -182,15 +174,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (type === 'base') {
       budgetItems.forEach(i => {
-        i.active = ['cameras', 'liveOps', 'servers'].includes(i.id);
+        i.active = ['liveOps', 'contentGen', 'servers'].includes(i.id);
       });
     } else if (type === 'full') {
       budgetItems.forEach(i => {
-        i.active = ['laser', 'liveOps', 'cameras', 'servers'].includes(i.id);
+        i.active = ['laser', 'liveOps', 'contentGen', 'servers'].includes(i.id);
       });
     } else if (type === 'interactive') {
       budgetItems.forEach(i => {
-        i.active = ['laser', 'liveOps', 'cameras', 'servers', 'qrBeta'].includes(i.id);
+        i.active = ['laser', 'liveOps', 'contentGen', 'servers', 'qrBeta'].includes(i.id);
       });
     }
 
